@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="site2.css">
+    <title>Miores Historias</title>
+</head>
+<body class="body">
+    <header id="cab">
+        
+        <nav id="menu">
+            <ul>
+                <li ><a class="logo" href="home.html" target="_self">Daniel Victor</a></li>
+                <li class="botao" ><a href="sitelivros.html" target="_self">TOP 3 Livros</a></li>
+                <li class="botao" ><a href="sitefilmes.html" target="_self">TOP 3 Series</a></li>
+                <li class="botao" ><a href="sitejogos.html" target="_self">TOP 3 Jogos</a></li>
+                <li class="botao" ><a href="infos.html" target="_self">Infos</a></li>
+                <li class="botao" ><a href="bibliog.html" target="_self">Bibliog</a></li>
+                <li class="botao" ><a href="contato.html" target="_self">Contato</a></li>
+                <li class="botao" ><a href="loja.html" target="_self">Loja</a></li>
+                <li class="botao" ><a href="jogo.html" target="_self">GAME</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contato">
+        <video autoplay muted loop> 
+            <source src="imagem/darksouls3.mp4" type="video/mp4">
+        </video>
+            <form name="fContato" method="post" action="#">
+                <label>Nome</label>
+                <input type="text" maxlength="50" size="60" name="fNome" autofocus required>
+                <label>Telefone P/ Contato</label>
+                <input type="text" maxlength="20" size="30" name="fTel" placeholder="(xx) Xxxxx-xxxx" required>
+                <label>Email</label>
+                <input type="email" maxlength="50" size="60" name="fEmail"  required>
+                <label>CEP</label>
+                <input type="text" maxlength="10" size="15" name="fCep" placeholder="xxxxxx-xxx" pattern="\d{5}-?\d{3}" required>
+                <label>Tamanho da Peça</label>
+                <input type="number" min="1" max="20" step="1" value="1" name="fPeça" required>
+                <label>Hora do Liberas</label>
+                <input type="time" value="10:00" step="1800" name="fLib" required>
+                <label>Data de Nascimento</label>
+                <input type="date" name="fNasc" required>
+
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="LIMPAR">
+            </form>
+    </section>
+
+
+
+   
+</body>
+</html>

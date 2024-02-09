@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+.fixFloat{
+    clear: both;
+}
+
+.body {
+    width: 100%;
+    background-color: #a5a5a5;
+    background: url(imagem/mistborn1.jpg);
+    overflow-y: scroll;
+    margin: 0;
+}
+
+/*TODO CABEÇALHO SUPERIOR*/
+#cab {
+    background-color: #303030;
+    height: 78px;
+    width: 1840px;
+    position: fixed;
+    top: 0;
+    border-radius: 10px;
+    color: #fff;
+    z-index: 2;
+    margin-left: 10px;
+    margin-top: 2px;
+    border: 3px solid #ff0000c7;
+}
+
+#menu{
+    display: inline-block; /* Permite que a ul ocupe apenas o espaço necessário */
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#menu ul{
+    list-style: none;
+    padding: 0;
+    border-radius: 0px;
+}
+#menu ul li{
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+    border-radius: 20px;
+    display: inline-block;
+}
+#menu ul li a{
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    color: rgb(252, 249, 231);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
+}
+#menu .logo{
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 30px;
+}
+
+#menu .logo:hover{
+    color: #c94646;
+    transition: color .3s; 
+}
+#menu .botao::before,
+#menu .botao::after {
+    content: '';
+    position: absolute;
+    top: 89%;
+    width: 25%;
+    height: 3%;
+    background: radial-gradient(circle at center, #ff0000, #3e3e3e00);
+    opacity: 0;
+    transition: opacity 0.8s; /* atraso na mudança de cor ao passar o cursor em cima */
+    transform: translate(-50%,-50%);
+}
+#menu .botao:hover::before,
+#menu .botao:hover::after {
+    background: radial-gradient(circle at center, #ff0000, #0d0d0d23); 
+    opacity: 1;
+}
+#menu .botao:hover{
+    color: #ddd;
+    background: radial-gradient(circle at center, #ff000067, #ff000012, #00000000); 
+    transition: background .8s; 
+}
+#menu a:hover{
+    color: #fff;
+}
+
+
+
+.jogo{
+    background-color: #000;
+    width: 960px;
+    height: 540px;
+    margin: 50px auto;
+    position: relative;
+    left: 0%;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.começo{
+    margin-top: 130px;
+}
+
+.cartaz{
+    width: 150px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #6b6b6b;
+}
+
+.nome{
+    color: #fff;
+    font-size: 35px;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.video{
+    position: relative;
+    width: 960px;
+    height: 540px;
+    border-radius: 10px;
+}
+
+.paragrafo{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 82.5%;
+    left: 45%;
+    transform: translate(-45%,-50%);    
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+
+#TOG{
+    background: url(imagem/cervotog.jpg);
+    margin-top: 130px;
+    width: 960px;
+    height: 540px;
+    position: relative;
+    left: 0%;
+    border-radius: 15px;
+}
+
+#MISTB{
+    background: url(imagem/personagemmistborn.jpg);
+    margin-top: 50px;
+    width: 940px; /* Define a largura máxima */
+    height: 540px; /* Mantém a proporção original da imagem */
+    position: relative;
+    left: 0%;
+    border-radius: 15px;
+}
+
+#NOV{
+    background: url(imagem/nome\ do\ vento.jpg);
+    margin-top: 50px;
+    width: 960px;
+    height: 600px;
+    position: relative;
+    left: 0%;
+    border-radius: 15px;
+}
+
+
+footer{
+    background-color: #000;
+    height: 50px;
+    width: 960px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color:#fff;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+
+details{
+    margin-top: 50px;
+    top: 100px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    align-items: start;
+    display: block;
+}
+
+details p{
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+summary{
+    font-size: 15px;
+    color: #fff;
+    background: linear-gradient(to top, #252525 0%, #303030 50%, #252525 100%);
+    padding: 10px 0px 0px 10px;
+    height: 30px;
+
+}
+details h1{
+    align-items: start;
+    color: aliceblue;
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    border-bottom: #ddd solid 1px;
+    width: 100%;
+    right:  170px;
+    display: block;
+}
+details[open] summary{
+    color: rgb(150, 201, 245);
+}
+
+
+#contato{
+    position: relative;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    height:50%;
+    margin-top: 330px;
+    padding: 10px;
+}
+#contato label{
+    color: #ddd;
+    font-size: 20px;
+    font-weight: bold;
+    font-style:italic;
+    display: block;
+    margin-top: 15px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    padding-left: 3px;
+}
+#contato input{
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+#contato input[type="submit"]{
+    background-color: #fff;
+    color: rgb(90, 100, 237);
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin-top: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 60%;
+    left: 43%;
+    transform: translate(-45%,-50%);    
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+#contato input[type="reset"]{
+    background-color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(90, 100, 237);
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin-top: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 75%;
+    left: 43%;
+    transform: translate(-45%,-50%);
+    cursor: pointer;
+}
+#contato video{
+    position: absolute;
+    left:70%;
+    top: 53%;
+    transform: translate(-45%,-50%);
+    width: 560px;
+    height: 480px;
+    z-index: 2;
+}
+
+
+
+.music{
+    position: absolute;
+    margin-top: 0;
+    width: 960px;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+.music.começo{
+    /*border: 2px solid #000;*/
+    position: absolute;
+    margin-top: 0;
+    width: 960px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+.letra{
+    color: #ddd;
+    font-size: 20px;
+    text-align: center;
+}
+
+.titulo{
+    color: #ddd;
+    font-size: 35px;
+    position: relative;
+    right: 9%;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+}
+
+.fim{
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-45%,-50%);
+}
+
+
+.body-loja{
+    background: url(imagem/mistborn1.jpg);
+    height: auto;
+    width: auto;
+}
+/*GRIP PRINCIPAL*/
+
+.wrapper {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, 223.8px);
+    grid-template-rows: repeat(auto-fit, auto);
+    grid-gap: .5rem;
+    height: auto;
+    grid-template-areas: 
+        "header header header header header header header header"
+        "aside main main main main main main aside2" 
+        "aside main main main main main main aside2"
+        "aside main main main main main main aside2"
+        "aside main main main main main main aside2"
+        "aside main main main main main main aside2";
+}
+
+/*  CABEÇALHO
+    AJEITAR OS HOOVER
+*/
+.cab {
+    grid-area: header;
+    display: flex;
+    background-color: #303030;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 2px;
+    margin-top: 2px;
+    border: 5px solid #303030;
+    z-index: 2;
+}
+.cab2{
+    background-color: #30303000;
+    height: 80px;
+    width: 1844px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    color: #fff;
+    z-index: -1;
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    border: 3px solid aqua;
+    border-radius: 20px;
+    z-index: 1;
+}
+.menu {
+    display:inline-table;
+    width: 140px;
+    height: 50px;
+    margin: 4px 10px 0 10px; 
+    color: aliceblue;
+    background-color: #30303000;
+    border-radius: 20px;
+}
+.menu:hover{
+    background: radial-gradient(circle at center, #00c8ffb6, #009dff4f, #00000000); 
+}
+.menu p{
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    display: inline-table;
+}
+.menu a{
+    display: inline-table;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 3px;
+    color: rgb(247, 242, 209);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
+}
+.menu a:hover{
+    color: white;
+}
+.menu .logo-nome{
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 30px;
+    width: 180px;
+}
+.menu .logo-nome.logo-nome:hover{
+    color: aqua;
+}
+
+
+
+/*CORPO*/
+.aside1 {
+    grid-area: aside;
+    background: url(imagem/propagandacoca.jpg);
+}
+.aside2 {
+    grid-area: aside2;
+    background: url(imagem/wppporsosol.jpg);
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    height: 100%;
+}
+.grid-main {
+    position: relative;
+    display: grid;
+    height: auto;
+    margin: 10px;
+    grid-gap: 10px;
+    padding: 0;
+    border-radius: 20px;
+    align-items: start;
+    transform: translate(-50%,-50%);
+    left: 48%;
+    top: 50%;
+}
+.meio {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px; /* Ajuste o espaçamento entre as grades conforme necessário */
+}
+.meio div{
+    width: 100%;
+    height: 245px;
+    border-radius: 20px;
+}
+.musica{
+
+    border-radius: 10px;
+    width: 100%;
+}
+h1{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin-left: 170px;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    margin-top: 10px;
+    z-index: 1;
+
+}
+
+.walpaper{
+    height: 100%;
+    height: 235px;
+}
+.comprar{
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    height: 235px;
+    
+}
+.comprar.ps5{
+    width: 100%;
+}
+.titulo-comprar{
+    padding-left: 50px;
+    font-size: 20px;
+    height: 100%;
+    color: #000;
+    text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+.grid-main p{
+    color: white;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 250px;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.grid-main.comercio{
+    background-color: white;
+}
+.footer-loja{
+    margin-top: 50px;
+}
